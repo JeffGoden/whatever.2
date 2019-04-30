@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <style>
+        #smallDiv {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            left: 0px;
+            bottom: 0px;
+            z-index: 3;
+            text-align: center
+        }
+
+        #bigDiv {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: red;
+            left: 100px;
+            top: 100px;
+            z-index: 2;
+            text-align: center
+        }
+
+        /*
+        #smallDiv:HOVER{ 
+            background-color: yellow;
+            animation-name: hello;
+            animation-duration: 4s;
+        }
+     @keyframes hello {
+            from{width: 100px;height: 100px;}
+            to{width: 200px;height: 200px}
+        } 
+        */
+
+        #bigDiv:hover {
+            background-color: green;
+
+            animation-name: moien;
+            animation-duration: 2s;
+        }
+
+        @keyframes moien {
+            from {
+                
+                height: 100px;
+            }
+
+            to {
+                
+                height: 5000px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a>
+
+        <div id="bigDiv">
+            <div id="smallDiv">
+            </div>
+        </div>
+
+    </a>
+
+</body>
+
+</html>

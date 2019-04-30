@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    a:link,
+    a:visited {
+      color: black;
+      background-color: grey;
+      border: 5px solid white;
+      width: 200px;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      padding: 15px 25px;
+    }
+
+    .bigtext {
+      float: right;
+    }
+
+    a:hover,
+    a:active {
+      background-color: blue;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    #bigdiv {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      z-index: 2;
+      text-align: center;
+   
+    }
+
+    #smalldiv {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 0px;
+      bottom: 0px;
+      z-index: 3;
+      text-align: center;
+
+  
+    }
+
+    #bigdiv:hover {
+      animation-name: moien;
+      animation-duration: 2s;
+    }
+
+    @keyframes moien {
+      from {
+
+        height: 25px;
+      }
+
+      to {
+
+        height: 90px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+
+        
+    <h style="color: red;">Über</h>
+    <p>
+      <a href="..\Home\Home.html">Home</a>
+      <a href="..\contact\Contact.html">Kontakt</a>
+      <a href="..\About\About.html">Über</a>
+      <a href="..\Produkte\Produkte.html">Produkte</a>
+      
+      <div id="bigdiv">
+          <a href="..\..\german\About\About.html"><img src="ger.jpg" width="50px" alt="german"></a>
+       
+        <div id="smalldiv">
+            <a href="..\..\english\About\About.html"><img src="Eng.jpg" width="50px" alt="english"></a>
+          
+        </div>
+      </div>
+    </p>
+    <p style="color:rgb(255, 0, 0);">Das ist die 4TPIF-E LPEM Klasse</p>
+  </center>
+
+</body>
+
+</html>
