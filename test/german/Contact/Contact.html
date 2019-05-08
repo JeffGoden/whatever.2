@@ -19,33 +19,70 @@ padding: 15px 25px;
     a:active {
       background-color: BLUE;
     }
+ body{
+   background-color: black;
+   text-align: center
+ }
+ #bigdiv {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      z-index: 2;
+      text-align: center;
+    float: right
+    }
 
+    #smalldiv {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 0px;
+      bottom: 0px;
+      z-index: 3;
+      text-align: center;
+
+  
+    }
+
+    #bigdiv:hover {
+      animation-name: moien;
+      animation-duration: 2s;
+    }
+
+    @keyframes moien {
+      from {
+        height: 25px;
+      }
+      to {
+        height: 90px
+      }
+    }
   </style>
 </head>
 
-<body style="background-color:Black;">
-    <center>
+<body>
+    <div id="bigdiv">
+        <a href="..\..\german\Contact\Contact.html"><img src="ger.jpg" width="50px" alt="german">
+       
+        </a>
+      <div id="smalldiv">
+          <a href="..\..\english\Contact\Contact.html"><img src="Eng.jpg" width="50px" alt="english">
+         
+          </a>
+      </div>
+    </div>
   <h style="color:rgb(255, 0, 0);">Kontakt</h>
         <p>
           <a href="..\Home\Home.html">Home</a>
           <a href="..\contact\Contact.html">Kontakt</a>
           <a href="..\About\About.html">Über</a>
           <a href="..\Produkte\Produkte.html">Produkte</a>
-
-
-          <div id="bigdiv">
-              <a href="..\..\english\About\About.html"><img src="Eng.jpg" width="50px" alt="english"></a>
-              <div id="smalldiv">
-              <a href="..\..\german\About\About.html"><img src="ger.jpg" width="50px" alt="german"></a>
-              </div>
-              </div>
-            </p>
     <h1 style="color:rgb(255, 0, 0);">Du kannst mich hier rüber kontaktieren</h1>
     <ul style="color:rgb(255, 0, 0);">
       <li>Tel:+352123456</li>
       <li>Email: 321@gmail.com</li>
     </ul>
-  </center>
+  
 
 </body>
 </html>

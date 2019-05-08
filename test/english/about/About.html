@@ -22,22 +22,63 @@ padding: 15px 25px;
 
     body {
       background-color:black;
+      text-align: center
+    }
+    #bigdiv {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      z-index: 2;
+      text-align: center;
+    float: right
+    }
+
+    #smalldiv {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 0px;
+      bottom: 0px;
+      z-index: 3;
+      text-align: center;
+
+  
+    }
+
+    #bigdiv:hover {
+      animation-name: moien;
+      animation-duration: 2s;
+    }
+
+    @keyframes moien {
+      from {
+        height: 25px;
+      }
+      to {
+        height: 90px
+      }
     }
   </style>
 </head>
 
 <body>
-    <center>
+    <div id="bigdiv">
+        <a href="..\..\english\About\About.html"><img src="Eng.jpg" width="50px" alt="english">
+        </a>
+     
+      <div id="smalldiv">
+          <a href="..\..\german\About\About.html"><img src="ger.jpg" width="50px" alt="german">
+          </a>
+      </div>
+      </div>
   <h style="color: red;">About</h>
       <p>
         <a href="..\Home\Home.html">Home</a>
         <a href="..\contact\Contact.html">Contact</a>
         <a href="..\About\About.html">About</a>
         <a href="..\Products\Products.html">Products</a>
-        <a href="..\..\german\About\About.html"><img src="eng.jpg" width="50px"></a>
       </p>
     <p style="color:rgb(255, 0, 0);">This is the 4TPIFE English class LPEM</p>
-  </center>
 
 </body>
 

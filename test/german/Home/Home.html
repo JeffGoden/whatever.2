@@ -26,12 +26,57 @@ padding: 15px 25px;
     <style>
       body {
         background-color: black;
+        text-align: center
       }
+
+      #bigdiv {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      z-index: 2;
+      text-align: center;
+    float: right
+    }
+
+    #smalldiv {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 0px;
+      bottom: 0px;
+      z-index: 3;
+      text-align: center;
+
+  
+    }
+
+    #bigdiv:hover {
+      animation-name: moien;
+      animation-duration: 2s;
+    }
+
+    @keyframes moien {
+      from {
+        height: 25px;
+      }
+      to {
+        height: 90px
+      }
+    }
     </style>
   </head>
 
 <body>
-    <center>
+    <div id="bigdiv">
+       
+       <a href="..\..\german\Home\Home.html"><img src="ger.jpg" width="50px" alt="english">
+       </a>
+   <div id="smalldiv">
+      
+       <a href="..\..\english\Home\Home.html"><img src="eng.jpg" width="50px" alt="german">
+       </a>
+   </div>
+ </div>
   <h style="color:rgb(255, 0, 0);">Home</h>
     <p>
       <a href="..\Home\Home.html">Home</a>
@@ -39,11 +84,10 @@ padding: 15px 25px;
       <a href="..\About\About.html">Über</a>
       <a href="..\Produkte\Produkte.html">Produkte</a>
       
-    <a href="..\..\english\Home\Home.html"><img src="Eng.png" width="50px"></a>
+    
     </p>
     <h2 style="color:rgb(255, 0, 0);">LPEM logo</h2>
     <img src="lpem.jpg" alt="Photo" width="500" height="333">
-  </center>
 
 </body>
 </html>

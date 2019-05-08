@@ -5,6 +5,15 @@
 
   <head>
     <style>
+      #img {
+width: 390px;
+height: 250px;
+}
+
+ .hey{
+   display: inline-block
+ }
+
 a:link,
 a:visited {
 color: black;
@@ -21,24 +30,92 @@ padding: 15px 25px;
       a:active {
         background-color: blue;
       }
-    </style>
-
-    <style>
+      .text{
+        color: red
+      }
+    
       body {
         background-color: black;
         text-align: center
       }
+
+      #bigdiv {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      z-index: 2;
+      text-align: center;
+    float: right
+    }
+
+    #smalldiv {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 0px;
+      bottom: 0px;
+      z-index: 3;
+      text-align: center;
+
+  
+    }
+
+    #bigdiv:hover {
+      animation-name: moien;
+      animation-duration: 2s;
+    }
+
+    @keyframes moien {
+      from {
+        height: 25px;
+      }
+      to {
+        height: 90px
+      }
+    }
+
     </style>
   </head>
   <body>
+      <div id="bigdiv">
+           
+          <a href="..\..\english\Products\Products.html"><img src="Eng.jpg" width="50px" alt="english">
+          </a>
+        <div id="smalldiv">
+            
+            <a href="..\..\german\Produkte\Produkte.html"><img src="ger.jpg" width="50px" alt="german">
+            </a>
+        </div>
+      </div>
         <h style="color:rgb(255, 0, 0);">Products</h>
     <p>
         <a href="..\Home\Home.html">Home</a>
         <a href="..\contact\Contact.html">Contact</a>
         <a href="..\About\About.html">About</a>
         <a href="..\Products\Products.html">Products</a>
-        <a href="..\..\german\Home\Home.html"><img src="Eng.jpg" width="50px"></a>
       </p>
-          
+      <div class="hey">
+      <img id="img" src="1.jpg" alt="">
+      <p class="text">Porsche 911 GT3 RS for 160.000€</p>
       </div>
+      <div class="hey">
+        <img id="img" src="2.jpg">
+        <p class="text">Tesla Model S for 79.900€</p>
+        </div>
+        <div class="hey">
+          <img id="img" src="3.jpg">
+          <p class="text">Bugatti la voiture noir for 18.000.000€</p>
+          </div>
+          <div class="hey">
+            <img id="img" src="4.jpg">
+            <p class="text">McLaren 650LT 265.000€</p>
+            </div>
+            <div class="hey">
+              <img id="img" src="5.jpg">
+              <p class="text">Bentley Continental for 222.000€</p>
+              </div>
+              <div class="hey">
+                <img id="img" src="6.jpg">
+                <p class="text">Aston Martin Vanquish 265.000€</p>
+                </div>
   </body>
