@@ -1,0 +1,66 @@
+
+
+  #img {
+width: 345px;
+height: 250px;
+}
+
+.hey{
+display: inline-block
+}
+
+a:link,
+a:visited {
+
+
+color: white;
+
+text-align: center;
+display: inline-block;
+padding: 15px 25px;
+}
+
+  
+  .text{
+    color: white
+  }
+
+  body {
+    background-color: black;
+    text-align: center
+  }
+
+  #bigdiv {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  z-index: 2;
+  text-align: center;
+float: right
+}
+
+#smalldiv {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 3;
+  text-align: center;
+
+
+}
+
+#bigdiv:hover {
+  animation-name: moien;
+  animation-duration: 2s;
+}
+
+@keyframes moien {
+  from {
+    height: 25px;
+  }
+  to {
+    height: 90px
+  }
+}

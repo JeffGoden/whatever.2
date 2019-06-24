@@ -1,0 +1,34 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+.hey {
+position: absolute;
+right: 0px;
+top: 50%;
+margin-top: -100px;
+animation: lol 5s infinite;
+animation-delay: 5s
+
+}
+.f{
+position: relative;
+width: 800px;
+height: 800px;
+background-color: red;
+animation: uff 5s infinite;
+animation-delay: 5s
+}
+@keyframes lol{
+0%{ right:0px}
+50%{right:600px}
+100%{right:0px;
+transform: rotate(360deg)}
+
+}
+@keyframes uff{
+0%{background-color: red}
+50%{background-color: yellow}
+100%{background-color:red;
+transform: rotate(360deg)}
+}
